@@ -1,0 +1,9 @@
+type Problem implements SearchableItem{
+    id:ID!
+    createDateTime:DateTime!
+    prettyCreateDateTime:String
+    title:String!
+    content:String!
+    tags:[String!]!
+    solutionCount:NonNegativeInt!
+}

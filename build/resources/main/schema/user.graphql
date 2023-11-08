@@ -1,0 +1,8 @@
+type User{
+    uid:ID!
+    username:String!
+    email:String!
+    avatar:Url
+    createDateTime:DateTime!
+    displayName:String
+}
