@@ -34,9 +34,9 @@ generateJava{
 	packageName = 'com.limbo.eask.generated'
 	generateClient = true
 	typeMapping=[
-	"Url":"java.net.URL",
+			"Date":"java.time.LocalDate",
+			"Url":"java.net.URL",
 			"DateTime":"java.time.OffsetDateTime",
-	"NonNegativeInt":"java.lang.Integer"
-
+			"NonNegativeInt":"java.lang.Integer"
 	]
 }
