@@ -1,0 +1,9 @@
+type Solution implements SearchableItem{
+    id:ID!
+    createDateTime:DateTime!
+    prettyCreateDateTime:String
+    content:String!
+    category:SolutionCategory!
+    voteAsGoodCount:NonNegativeInt
+    voteAsBasCount:NonNegativeInt
+}
