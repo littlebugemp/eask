@@ -31,6 +31,8 @@ tasks.named('test') {
 }
 
 generateJava{
+	packageName = 'com.limbo.eask.generated'
+	generateClient = true
 	typeMapping=[
 	"Url":"java.net.URL",
 			"DateTime":"java.time.OffsetDateTime",
