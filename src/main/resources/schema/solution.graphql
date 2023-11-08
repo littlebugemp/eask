@@ -6,4 +6,9 @@ type Solution implements SearchableItem{
     category:SolutionCategory!
     voteAsGoodCount:NonNegativeInt
     voteAsBasCount:NonNegativeInt
+    author:User!
+}
+
+type SolutionResponse{
+    solution:Solution
 }

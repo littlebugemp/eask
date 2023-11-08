@@ -6,4 +6,10 @@ type Problem implements SearchableItem{
     content:String!
     tags:[String!]!
     solutionCount:NonNegativeInt!
+    author:User!
+    solutions:[Solution!]
+}
+
+type ProblemResponse{
+    problem:Problem
 }
