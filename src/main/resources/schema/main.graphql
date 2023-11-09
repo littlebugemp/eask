@@ -24,6 +24,11 @@ type Mutation{
     solutionVote(vote:SolutionVoteInput!):SolutionResponse!
 }
 
+type Subscription{
+    problemAdded:Problem!
+    solutionVoteChanged(solution:ID!):Solution!
+}
+
 interface SearchableItem{
     id:ID!
     createDateTime:DateTime!

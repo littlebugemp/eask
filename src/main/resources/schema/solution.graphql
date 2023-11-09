@@ -5,7 +5,7 @@ type Solution implements SearchableItem{
     content:String!
     category:SolutionCategory!
     voteAsGoodCount:NonNegativeInt
-    voteAsBasCount:NonNegativeInt
+    voteAsBadCount:NonNegativeInt
     author:User!
 }
 

@@ -5,4 +5,19 @@ type User{
     avatar:Url
     createDateTime:DateTime!
     displayName:String
+    problems:[Problem!]
+}
+
+type UserAuthToken{
+    authToken:String
+    expiryTime:DateTime
+}
+
+type UserResponse{
+    user:User
+    authToken:UserAuthToken
+}
+
+type UserActivationResponse{
+    isActive:Boolean
 }
